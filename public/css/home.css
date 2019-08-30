@@ -1,0 +1,129 @@
+div.featured{
+    padding: 1px 0 0 0;
+    margin: -1px auto 0 auto;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    border-radius: 5px;
+    background-position: center;
+
+}
+div.featuredText{
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+    padding-right: 0px;
+    background: rgba(0, 0, 0, 0.685);
+    position: absolute; 
+    left: 0px;
+    padding-left: 5px; 
+    padding-bottom: 5px;
+    padding-right: 5px;
+    bottom:0px; 
+    
+}
+button.featuredButton{
+    border-radius: 10px;
+    color: black;
+    background: lightgray;
+    border-color: lightgray;
+    width: 100%;
+}
+button.featuredButton:hover{
+    background: darkgray;
+    border-color: darkgray;
+
+}
+p.featuredTitle{
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 990px)
+{
+    div.featuredText{
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    div.featured{
+        width: 100%;
+    }
+}
+
+div.Seperator{
+    margin-top: 9px;
+    height: 40px;
+    align-content: center;
+    margin-left: 24%;
+    margin-right: 24%;
+    background: #1c1f24;
+
+}
+
+p.SeperatorText{
+    padding-top: 0px;
+    border-left: 3px solid lightgray;
+    color: white;
+    font-size: 25px;
+}
+
+div.showList{
+    
+    width: 55%;
+    margin: 10px auto;
+    position: relative;
+    text-align:center;
+}
+div.showListContent{
+    position: relative;
+    display:inline-block;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: calc(270px * 0.8);
+    width: calc(200px * 0.8);
+    transition: all .2s ease-in-out;
+}
+div.showListContent:hover{
+    z-index:10;
+    transform: scale(1.2);
+}
+div.ListContentName{
+    background: rgba(0, 0, 0, 0.507);
+    position: absolute; 
+
+    bottom: 0px;
+    height: 10px;
+    padding-bottom: 29%;
+    padding-right: 0%;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+p.ContentName{
+    padding-bottom: 5px;
+    margin-bottom: 2px !important;
+    font-weight: bold;
+    font-size: 110%;
+    color: white;
+    margin-bottom: 0px;
+}
+
+@media  screen and (max-width: 1024px)
+{
+    div.featured{
+        width: 55%;
+        height: 200px;
+    }
+}
+
+
+
+

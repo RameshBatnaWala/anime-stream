@@ -1,0 +1,297 @@
+.white{
+    color: white;
+}
+div.modal-black{
+    background-color: black !important;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+p.addShow{
+    text-align: center;
+}
+button.addShow{
+    background: transparent;
+    color: white;
+    border-radius: 25px;
+    border: 2px white solid;
+    width: 100%;
+}
+
+button.addShow:hover{
+    background: rgba(128, 128, 128, 0.383);
+}
+
+div.info{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1.Title{
+text-align: center;
+}
+div.Episodes{
+    border-color: #1c1f24;
+    border-style: solid;
+    border-width: 100%;
+    background: #1c1f24;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+input.submit{
+    border-radius: 10px;
+    font-weight: bold;
+    color:white;
+    background-color: transparent;
+    border-color: lightgreen;
+}
+.episodeSelect{
+    
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+}
+
+button.status{
+    border: 3px lightgreen solid;
+    background-color: transparent;
+    color: lightgreen;
+    border-radius: 10px;
+}
+
+button.Completed{
+    border-color: blue;
+    color: blue;
+}
+
+button.Completed:hover{
+    border-color: darkblue;
+    color: darkblue;
+}
+
+button.On-Hold{
+    border-color: yellow;
+    color: yellow;
+}
+button.Dropped{
+    border-color: red;
+    color: red;
+}
+button.PlanToWatch{
+    border-color: lightgray;
+    color: lightgray;
+}
+
+button.None{
+    border-color: white;
+    color: white;
+}
+
+div.radio
+{
+    text-align: left;
+    margin-left: 38px;
+} 
+div.collapseForm{
+    border-radius: 10px;
+    margin-top: 10px;
+    color:white;
+    max-width: 200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-content: center;
+    background: #06090f;
+
+}
+button.status:hover{
+    border-color: darkgreen;
+    color: darkgreen;
+
+}
+
+button.On-Hold:hover{
+    border-color: rgb(192, 192, 0);
+    color: rgb(192, 192, 0);
+}
+button.Dropped:hover{
+    border-color: darkred;
+    color: darkred;
+}
+button.PlanToWatch:hover{
+    border-color:gray;
+    color: gray;
+}
+
+button.None:hover{
+    border-color:gray;
+    color:gray;
+}
+
+button.Completed:hover{
+    border-color: darkblue;
+    color: darkblue;
+}
+
+p.Episodes{
+    
+    font-size: 20px;
+    border-left: 5px solid lightgray;
+    margin-top: auto +2px;
+    margin-bottom: auto;
+    color: white;
+}
+button.genres{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid gray;
+    color: white;
+}
+button.genres:hover{
+    border-color: darkgray;
+}
+button.episodeList{
+    border-radius: 20px;
+    color: white;
+    font-weight: bold; 
+    font-size: 18px;
+    margin-top: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgba(255, 255, 255, 0.027);
+    width: 90%;
+    max-width: 1000px;
+    height: 50px;
+    
+}
+
+button.watched{
+    border-color: lightgreen;
+}
+
+
+button.episodeList:hover{
+    font-size: 20px;
+    border-color: gray;
+}
+
+button.watched:hover{
+    border-color: green;
+}
+
+div.image{
+    width: 225px; 
+    height: 350px;
+    background-repeat:no-repeat;
+    background-size:cover; 
+    margin-left: 200px;
+}
+
+.column {
+    float: left;
+  padding: 10px; 
+}
+
+.column.side {
+   width: 25%;
+}
+.column.middle {
+  width: 50%;
+}
+ul.infoList{
+    list-style-type: none;
+    border-left: 1px solid darkgray;
+}
+body {
+  margin: 0;
+}
+
+
+
+p.NoEpisodes{
+    font-weight: bold;
+    color: white;
+    font-size: 130%;
+}
+
+div.NoEpisodes{
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(51, 51, 51);
+}
+
+
+@media screen and (max-width: 990px) {
+  .column.side, .column.middle {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
+  }
+  .sideRight{
+      margin-right: 30%;
+  }
+
+ 
+  div.image{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-content: center;
+    display: block;   
+  }
+  div.Episodes{
+      margin-left: 0%;
+      margin-right:0%;
+  }
+  div.NoEpisodes{
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+  p.Episodes{
+      margin-left: 25%;
+  }
+  body{
+        overflow-x: hidden;
+    }
+  
+}
+
+
+
+.star {
+  font-size: 25px;
+	color:gold;
+}
+
+.heart {
+  font-size: 25px;
+	color:red;
+}
+
+
+
+@media screen and (max-width: 1730px) {
+    div.image{
+        display: block;
+        margin-left: 90px ;
+    }
+}
+@media screen and (max-width: 1260px) {
+    div.image{
+        display: block;
+        margin-left: 30px ;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,87 @@
+div.Settings{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div.upload{
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+input.submit{
+    border-radius: 25px;
+    border: 2px gray solid;
+    background: transparent;
+    color: white;
+}
+input.submit:hover{
+    font-weight: bold;
+    background: rgba(128, 128, 128, 0.39);
+}
+
+button.upload{
+  border: 2px solid gray;
+  color: white;
+  
+  background: transparent;
+  border-radius: 25px;
+  width: 100%;
+  font-weight: bold; 
+}
+
+div.upload:hover{
+    background: rgb(83, 83, 83);
+}
+
+div.upload input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+div.Submit{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+input.submit{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 870px)
+{
+    div.Submit{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    div.Settings{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    div.upload{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    div.radio{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+}
+
+div.radio{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 5px 0px;
+    border-top: 1px dotted white;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+

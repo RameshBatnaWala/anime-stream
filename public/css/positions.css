@@ -1,0 +1,159 @@
+h1.VideoTitle{
+    margin-top: 50px;
+    font-weight: 800;
+}
+p.topDist{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+
+
+button.marginL{  
+    margin-left: 2px;
+    border-radius: 0 !important;
+}
+button.padding{
+    padding: 5px 20px !important;
+}
+
+nextButton{
+    color: white;
+}
+
+nav.backColor{
+    color: #FFFFFF !important;
+    text-align: center;
+    background-color: #06090f !important;
+}
+
+.navbar {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+
+.dropdown-menu {
+    background-color:black;
+}
+
+a.SeriesLink{
+    font-size: 250%;
+    text-decoration: none;
+    color:white;
+}
+a.SeriesLink:hover{
+    color: gray; 
+}
+
+backgroundColor{
+    background-color: darkgray !important;
+}
+
+div.buttonGroup{
+    
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 850px)
+{
+    div.buttonGroup{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+hr.navSeb{
+
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid gray;
+    margin-top: 0.20px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+
+div.colorB{
+    background-color: black;
+    color: white;
+}
+
+input.loginSub{
+    font-size: 110%;
+    background-color: transparent;
+    border: 2px solid gray;
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input.loginSub:hover{
+    background: rgba(173, 173, 173, 0.555);
+}
+
+form.login{
+    margin-bottom: -13px;
+}
+button.loginSub{
+    margin-top: -50px;
+    font-size: 110%;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 25px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button.loginSub:hover{
+    background: rgba(173, 173, 173, 0.555);
+}
+
+div.centerSub{
+    text-align: center;
+}
+
+div.login{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input.loginInput{
+    background-color: transparent;
+    color: white;
+    font-size: 110%;
+    border: 2px gray solid;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+input.loginInput:focus{
+    font-size: 130%;
+    font-weight: bold;
+    border-color: white;
+}
+
+label.loginInput{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}

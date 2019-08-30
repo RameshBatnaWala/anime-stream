@@ -1,0 +1,45 @@
+button.Video{
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    width: 50px;
+    border-radius: 25px;
+    border: 2px gray solid;
+}
+
+button.Video:hover{
+    background-color: rgba(218, 218, 218, 0.459);
+}
+
+button.current{
+    border: 3px white solid;
+}
+
+Video.videoSize{
+    width: 818px;
+    height: 460px;
+}
+
+
+button.Watched{
+    color: lightgreen;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid lightgreen;
+}
+
+button.Watched:hover{
+    background: rgba(144, 238, 144, 0.356);
+}
+
+
+button.NotWatched{
+    color: lightgray;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+
+button.NotWatched:hover{
+    background: rgba(211, 211, 211, 0.377);
+}

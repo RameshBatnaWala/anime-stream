@@ -1,0 +1,56 @@
+h1.ScheduleTitle{
+    text-align: center;
+    color: white;
+}
+
+div.DaySeperator{
+    margin-right: 26%;
+    margin-left: 26%;
+    height: 40px;
+    color: white;
+    margin-bottom: 9px;
+}
+
+p.Day{
+    text-align: left;
+    margin-top:3px;
+    font-size: 130%;
+    font-weight: bold;
+    border-bottom: 5px rgb(219, 219, 219) dotted;
+}
+div.shows{
+    margin-left: 26%;
+    margin-right: 26%;
+}
+
+p.shows{
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    font-size: 130%;
+    color: white;
+    margin-top: -16px;
+    transition: all .1s ease-in-out;
+}
+
+a{
+
+    text-decoration: none !important;
+}
+
+
+p.shows:hover{
+    background-color: rgb(44, 44, 44);
+    font-size: 135%;
+}
+
+@media screen and (max-width: 760px)
+{
+    div.shows{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    div.DaySeperator{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
