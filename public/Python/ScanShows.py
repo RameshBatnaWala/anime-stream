@@ -3,7 +3,7 @@ from jikanpy import Jikan
 import json
 import subprocess
 import mysql.connector
-
+import time
 
 
 
@@ -99,5 +99,9 @@ def getInfoFromDatabase(allShows):
 
 
 
-allShowsSorted = getAllShows();
-getInfoFromDatabase(allShowsSorted);
+
+
+while True:
+    allShowsSorted = getAllShows();
+    getInfoFromDatabase(allShowsSorted);
+    time.sleep(86400);
