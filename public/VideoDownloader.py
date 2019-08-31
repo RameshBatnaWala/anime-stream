@@ -77,7 +77,7 @@ def DownloadShow(seriesID ,showName, cursor, Database):
 while True:
 
     Database = mysql.connector.connect(
-        host="localhost",
+        host="127.0.0.1",
         user="pythonUser",
         passwd="python",
         database="streaming"
