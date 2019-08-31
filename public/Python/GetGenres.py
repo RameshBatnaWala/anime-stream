@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from jikanpy import Jikan
 import json
@@ -7,7 +7,7 @@ import mysql.connector
 
 
 Database = mysql.connector.connect(
-    host="localhost",
+    host="127.0.0.1",
     user="pythonUser",
     passwd="python",
     database="streaming"

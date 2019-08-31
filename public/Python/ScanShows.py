@@ -54,7 +54,7 @@ def getInfoFromDatabase(allShows):
 
     jikan = Jikan()
     Database = mysql.connector.connect(
-    host="localhost",
+    host="127.0.0.1",
     user="pythonUser",
     passwd="python",
     database="streaming"
