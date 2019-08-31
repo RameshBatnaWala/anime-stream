@@ -67,8 +67,7 @@ def DownloadShow(seriesID ,showName, cursor, Database):
             print("Download Completed !")
             Video = GetVideoDirAndConvert(showName, str(episode));
             SaveToDatabase(seriesID, showName, episode, cursor, Video, Database);
-            if c == 2:
-                return;
+            
 
 
 
