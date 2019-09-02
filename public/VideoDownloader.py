@@ -16,10 +16,19 @@ def GetEpisodes(showName):
         episodeNumbers.append(episode['episode']);
     return episodeNumbers[::-1];
 
+
+
+def GetFolderName():
+    result = subprocess.run(['ls', 'Downloads'], stdout=subprocess.PIPE);
+    #print(result.stdout);
+    r = str(result.stdout).strip('b').replace("\\n",'').strip("'");
+    print(r)
+    return r;
+
 def GetVideoDirAndConvert(showName, episode):
 
-    result = subprocess.run(['ls', 'Downloads/'+showName],stdout=subprocess.PIPE)
-    resultS = "Downloads/'"+showName+"'/"+(str(result.stdout).strip('b').replace("\\n",''));
+    result = subprocess.run(['ls', 'Downloads/'+GetFolderName()],stdout=subprocess.PIPE)
+    resultS = "'Downloads/"+GetFolderName()+"/"+(str(result.stdout).strip('b').replace("\\n",'')).strip("'")+"'";
     print(resultS);
     resultS = './single.sh '+resultS;
     print(resultS)
