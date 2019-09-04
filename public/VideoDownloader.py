@@ -37,7 +37,7 @@ def GetVideoDirAndConvert(showName, episode):
     print(vName);
     rename = "mv out storage/'"+vName+"'";
     os.system(rename);
-    os.system("rm -rf Downloads/"+GetFolderName()+"")
+    os.system("rm -rf Downloads/*")
     return vName;
     
 def SaveToDatabase(SeriesID, showName, episode, cursor, fileName, Database):
