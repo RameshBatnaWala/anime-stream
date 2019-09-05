@@ -17,25 +17,39 @@
         <div class="row justify-content-center"><a class="SeriesLink text-center" href="{{url('Show/'.$show->id)}}">{{$show->seriesName}}</a> </div>
         <br>
         <p class="text-center text-light topDist">Episode: {{$currentEpisode->EpisodeCount}}
-            <button id="WatchedButton" class="@if($Watched == null)NotWatched @else Watched @endif" onclick="sendData();" title="remove from watch list"><i class="fa fa-check"></i></button>
+            @auth
+                <button id="WatchedButton" class="@if($Watched == null)NotWatched @else Watched @endif" onclick="sendData();" title="remove from watch list"><i class="fa fa-check"></i></button>
+            @endauth
         </p>
-        <div class="row justify-content-center">
 
-            <!--Grid column-->
 
-            <video id=example-video width="818" height="460" class="video-js vjs-big-play-centered" controls>
-                <source
-                        src="{{url('storage/'.$currentEpisode->reference.'/index.m3u8')}}"
-                        type="application/x-mpegURL">
-                </source>
+        
+        @auth 
+            <div class="row justify-content-center">
 
-                    <track kind="captions" src="{{url('storage/'.$currentEpisode->reference.'/subtitles.vtt')}}" srclang="en" label="English" default>
+                <video id=example-video width="818" height="460" class="video-js vjs-big-play-centered" controls>
+                        <source
+                                src="{{url('storage/'.$currentEpisode->reference.'/index.m3u8')}}"
+                                type="application/x-mpegURL">
+                        </source>
+
+                        <track kind="captions" src="{{url('storage/'.$currentEpisode->reference.'/subtitles.vtt')}}" srclang="en" label="English" default>
                     </video>
-                    <script>
+                <script>
                     var player = videojs('example-video');
                     player.play();
                 </script>
-        </div>
+            </div>
+        @endauth
+
+        @guest
+            <div class="GuestInfo">
+                <p class="GuestInfoP">
+                   You are currently not logged in, and therefore not authorized to view this content
+                <p> 
+            </div>   
+        @endguest
+
 
         <div class="buttonGroup text-center">
             @foreach ($episodes as $Episode)

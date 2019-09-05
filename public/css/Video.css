@@ -20,6 +20,20 @@ Video.videoSize{
     height: 460px;
 }
 
+div.GuestInfo{
+    margin-top: 25px;
+    background-color: rgba(14, 14, 14, 0.644);
+    margin-left: 29%;
+    margin-right: 29%;
+    padding: auto;
+}
+
+p.GuestInfoP{
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+}
 
 button.Watched{
     color: lightgreen;
