@@ -15,13 +15,13 @@ input.USignup {
     color: white !important;
     width: 100%;
     text-align: center;
-    transition: all .1s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-input.signup:hover{
+input.USignup:hover{
     border: 2px white solid;
 }
-input.signup:focus{
-    font-size: 110%;
+input.USignup:focus{
+    font-size: 140%;
     font-weight: bold;
     border: 2px white solid;
 }

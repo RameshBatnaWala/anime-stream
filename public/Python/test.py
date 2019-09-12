@@ -8,7 +8,7 @@ config = ConfigManager()
 episodes = p.get_episodes("Hibike! Euphonium")
 
 
-print(episodes);
+print(episodes[0]['1080']['Magnet']);
 
 #print(episodes[0]);
 #s = episodes[0].replace("'", '"')

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-dark backColor navbar-expand-lg" style="background-color:gray">
-  <a class="navbar-brand" href="{{url('/')}}"><i class="fa fa-home"></i>多-アニメ</a>
+  <a class="navbar-brand" href="{{url('/')}}"><i class="fa fa-home"></i>多いアニメ</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -51,8 +51,8 @@
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content colorB">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+      <div class="modal-header row justify-contend-center">
+        <h4 class="modal-title text-center">Sign in</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -65,8 +65,8 @@
           <label class="loginInput" for="password">Password</label> 
           <input name="password" id="password" class="loginInput" type="password" placeholder="password" required>
           <br>
-          <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-          <label class="form-check-label" for="remember">
+          <input class="form-check-input check" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+          <label class="form-check-label check" for="remember">
             Remember Me
           </label>
           
@@ -83,6 +83,5 @@
 </div>
 
 @endguest
-
 
 <hr class="navSeb" />

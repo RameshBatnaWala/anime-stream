@@ -47,12 +47,16 @@ class RegisterController extends Controller
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
-    {
+    {   
+        $token = $data['token'];
+        
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'token' => ['required', 'exists:tokens'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
+        
     }
 
     /**
@@ -63,6 +67,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $t = \App\token::where('token', $data['token'])->first();
+        $t->delete();
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

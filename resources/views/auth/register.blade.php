@@ -11,8 +11,8 @@
           @csrf  
             <h1 class="signup">Signup</h1>
             <hr class="signup">
-          <!--  <label for="token">Access-Token</label>
-            <input class="USignup"  type="password" name="token" id="token" placeholder=" enter access Toke here">  -->
+            <label for="token">Access-Token</label>
+            <input class="USignup"  type="password" name="token" id="token" placeholder=" enter access Toke here"> 
             <label for="name"> Username </label>
             <input class="USignup"  type="text" placeholder="Username" name="name" id="name" required>
             <label for="email">Email</label>

@@ -11,6 +11,9 @@ button.SelectButton{
     background: transparent;
 }
 
+
+ 
+
 button.SelectButton:hover{
     border-color: white;
 
@@ -61,7 +64,7 @@ h1.userName{
     color: white;
     margin-left: 25%;
     margin-right: 25%;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 div.backgroundimage{
     height: 220px;
