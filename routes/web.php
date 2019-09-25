@@ -25,6 +25,7 @@ Route::get('All','AllShows@show');
 Route::get('User/','User@show');
 Route::get('User/{type}','User@WithSet');
 Route::get('/','Homepage@show');
+Route::get('RemoveVideo/{id}','delete@show');
 Route::get('Settings', 'Settings@show');
 Route::post('Settings','Settings@store');
 Route::get('H',function(){
