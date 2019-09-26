@@ -28,7 +28,7 @@
             </div>
 
             @if($show->InDownloadList == 1)
-            <br>
+            
             <div class="text-center"><button class="status None" style="color: red; border-color: red;"data-toggle="modal" data-target="#modal" >delete Show</button> </div>
             <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
