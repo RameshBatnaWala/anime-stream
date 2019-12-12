@@ -5,7 +5,7 @@ cp -r "$1" out/input.mkv
 cd out/
 
 # Extract Subtitles
-mkvextract tracks input.mkv -c UTF-8 "2:subtitles.ass"
+mkvextract tracks input.mkv -c UTF-8 "${2}:subtitles.ass"
 
 # Remove Subtitles
 ffmpeg -i input.mkv -sn -c copy stripped.mkv
